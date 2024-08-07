@@ -35,7 +35,8 @@ if (!defined('ABSPATH')) {
 define( 'PORTAL_PAY_VERSION', '1.0.0' );
 
 //initialize files
-include 'settings-page.php';
+require_once plugin_dir_path(__FILE__) . 'class-data-encryption.php';
+require_once plugin_dir_path(__FILE__) . 'settings-page.php';
 
 
 
