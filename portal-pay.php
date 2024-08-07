@@ -1,5 +1,6 @@
 <?php
 namespace OverlordNews;
+
 /**
  * @since             1.0.0
  * @package           Portal_Pay
@@ -9,19 +10,23 @@ namespace OverlordNews;
  * Plugin URI:        https://overlord.news/portal-pay-plugin
  * Description:       Integrate Woocommerce with Portal Pay. 
 
-*Make the Overlord Proud
+ *Make the Overlord Proud
+ * Tags: Crypto payments, crypto, Overlord, Super Duper, Portalcoin, crypto for woocommerce, Portal Pay, Pay, Portal
  * Version:           1.0.0
  * Author:            Digital Seeds Development
  * Author URI:        https://digitalseeds.dev/
+ * Developer: 	      Digital Seeds Development
+ * Developer URI:     https://digitalseeds.dev
  * License:           
  * License URI:       
  * Text Domain:       overlord-news-portal-pay
  * Domain Path:       /languages
+ * Requires at least: 6.0.0
+ * Requires PHP: 8.1
  */
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
+if (!defined('ABSPATH')) {
+	exit; // Exit if accessed directly
 }
 
 /**
@@ -29,12 +34,9 @@ if ( ! defined( 'WPINC' ) ) {
  * */
 define( 'PORTAL_PAY_VERSION', '1.0.0' );
 
-// Test to see if WooCommerce is active (including network activated).
-$plugin_path = trailingslashit(WP_PLUGIN_DIR) . 'woocommerce/woocommerce.php';
+//initialize files
+include 'settings-page.php';
 
-if (
-	in_array($plugin_path, wp_get_active_and_valid_plugins())
-	|| in_array($plugin_path, wp_get_active_network_plugins())
-);
+
 
 ?>
