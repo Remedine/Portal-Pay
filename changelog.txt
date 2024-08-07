@@ -1,0 +1,11 @@
+*** Portal Pay Changelog ***
+
+2024-08-06 - version 1.1.0
+* Added - Useful new feature
+* Fixed - Important bug fix
+
+YYYY-MM-DD - version 1.0.1
+* Fixed a bug
+
+2024-08-06 - version 1.0.0
+* Initial release
