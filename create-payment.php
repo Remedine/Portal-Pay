@@ -23,7 +23,7 @@ function send_payment_request()
         'currency_id' => 1016,
         'amount' => 10,
         'description' => 'Overlord News',
-        'customer_identifier' => '80085',
+        'customer_identifier' => '80085135',
         'order_identifier' => '80085',
         'line_items' => array(
             array(
@@ -41,9 +41,9 @@ function send_payment_request()
         ),
         'metadata' => 'Comment: Please go deep into conspiracies.',
         'redirect_meta' => array(
-            'success_url' => 'https://my-website/success',
-            'cancel_url' => 'https://my-website/cancel',
-            'failure_url' => 'https://my-website/failure',
+            'success_url' => 'http://portal-pay-dev.local/success',
+            'cancel_url' => 'http://portal-pay-dev.local/cancel',
+            'failure_url' => 'http://portal-pay-dev.local/failure',
         ),
     ));
 
